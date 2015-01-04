@@ -24,7 +24,8 @@ ok($clp->isa($class), "imported constructor correct");
 ok($sub->can("to_file"), "save to file supported");
 ok($sub->can("from_file"), "load from file supported");
 my $tdata = "test_data/";
-foreach my $action ( qw(INTERSECT UNION DIFFERENCE) ) {
+
+foreach my $action  (qw(INTERSECT UNION DIFFERENCE)) {
 	my $c;
 	my $res, $sub, $clp;
 	ok($c = $sub->from_file($tdata . "subjfile", 1), "read subject ($c)");
