@@ -24,7 +24,7 @@ our @EXPORT = qw(
  new_gpc
 );
 
-our $VERSION = '0.051';
+our $VERSION = '0.052';
 
 require XSLoader;
 XSLoader::load('Math::Geometry::Planar::GPC::PolygonXS', $VERSION);
